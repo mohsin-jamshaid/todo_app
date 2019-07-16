@@ -1,0 +1,9 @@
+<%= form_with(model: [ @todo_list, @todo_list.todo_items.build ], local: true) do |form| %>
+  <p>
+    <%= form.label :content %><br>
+    <%= form.text_field :content ,placeholder: "New Todo"%>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
